@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Absensi Wajah + Gesture</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Absensi Wajah & Gesture API</title>
 </head>
 <body>
-  <h2>Absensi Wajah + Gesture (Web)</h2>
-  <video id="video" autoplay></video>
-  <p id="status">Status: Menunggu deteksi...</p>
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <h1>Absensi Real-Time</h1>
+    <img src="{{ url_for('video_feed') }}" width="1280" height="720">
+    <p>Lihat konsol Python untuk log absensi.</p>
 </body>
 </html>
